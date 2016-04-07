@@ -74,7 +74,7 @@ public class Scenario2Tests {
 		assertEquals(0, player.getScore());
 		game.move(player, Direction.EAST);
 		assertEquals(10, player.getScore());
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 	}
 	
 	
@@ -87,7 +87,7 @@ public class Scenario2Tests {
 		assertEquals(0, player.getScore());
 		game.move(player, Direction.WEST);
 		assertEquals(0, player.getScore());
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 	}
 	
 //	Scenario S2.3: The player dies
@@ -99,7 +99,7 @@ public class Scenario2Tests {
 		game.move(player, Direction.WEST);
 		game.move(player, Direction.WEST);
 		assertFalse(player.isAlive());
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 	}
 	
 //	Scenario S2.4: The move fails
@@ -111,7 +111,7 @@ public class Scenario2Tests {
 		game.move(player, Direction.NORTH);
 		Square current = player.getSquare();
 		assertEquals(prev, current);
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 	}
 	
 //	Scenario S2.5: Player wins, extends S2.2
@@ -122,7 +122,7 @@ public class Scenario2Tests {
 		int pellets = l.remainingPellets();
 		assertEquals(0, pellets);
 		assertFalse(game.isInProgress());
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 	}
 
 }

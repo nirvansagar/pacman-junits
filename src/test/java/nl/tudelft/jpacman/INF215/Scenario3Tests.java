@@ -74,12 +74,9 @@ public class Scenario3Tests {
 	public void testS31() throws Exception {
 		Board b = l.getBoard();
 		Square s2 = b.squareAt(2, 1);
-//		System.out.println("s1="+s1.toString() + " s2="+s2.toString());
 		assertNotNull(ghost);
-//		System.out.println(g.getInterval() );
 		Thread.sleep(ghost.getInterval());
 		Square s3 = ghost.getSquare();
-//		System.out.println(s3.toString());
 		assertEquals(s3,s2);
 	}
 	
